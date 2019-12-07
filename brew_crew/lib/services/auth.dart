@@ -31,6 +31,16 @@ Stream<User> get user{
   }
 
   //sign in with email & pass
+  Future signInWithEmailAndPassword(String email,String pass) async {
+    try {
+      AuthResult result = await _auth.signInWithEmailAndPassword(email:email,password:pass);
+      FirebaseUser user = result.user;
+      return _userFromFirebaseUser(user);
+    } catch (e) {
+        print(e.toString());
+      return null;
+    }
+  }
 
   //register with email & pass
   Future registerWithEmailAndPassword(String email,String pass) async {

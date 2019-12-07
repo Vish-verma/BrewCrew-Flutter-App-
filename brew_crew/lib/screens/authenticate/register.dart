@@ -1,4 +1,5 @@
 import 'package:brew_crew/services/auth.dart';
+import 'package:brew_crew/shared/constants.dart';
 import 'package:flutter/material.dart';
 
 class Register extends StatefulWidget {
@@ -45,6 +46,7 @@ final _formKey = GlobalKey<FormState>();
             children: <Widget>[
               SizedBox(height: 20.0,),
               TextFormField(
+                decoration: textInputDecoration.copyWith(hintText:'Email' ),
                 validator: (val){
                   if(val.isEmpty){
                     return "Enter an Email";
@@ -59,6 +61,7 @@ final _formKey = GlobalKey<FormState>();
               ),
               SizedBox(height: 20.0,),
               TextFormField(
+                decoration: textInputDecoration.copyWith(hintText: 'Password'),
                 obscureText: true,
                 validator: (val){
                   if(val.length < 6){
