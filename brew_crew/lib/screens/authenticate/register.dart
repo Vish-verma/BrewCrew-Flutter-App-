@@ -45,7 +45,7 @@ bool loading = false;
           key: _formKey,
           child: Column(
             children: <Widget>[
-              SizedBox(height: 20.0,),
+              SizedBox(height: 18.0,),
               TextFormField(
                 decoration: textInputDecoration.copyWith(hintText:'Email' ),
                 validator: (val){
@@ -60,7 +60,7 @@ bool loading = false;
                     setState(()=>email=val);
                 },
               ),
-              SizedBox(height: 20.0,),
+              SizedBox(height: 18.0,),
               TextFormField(
                 decoration: textInputDecoration.copyWith(hintText: 'Password'),
                 obscureText: true,
@@ -77,7 +77,7 @@ bool loading = false;
                 },
                 
               ),
-              SizedBox(height: 20.0,),
+              SizedBox(height: 18.0,),
               RaisedButton(
                 color: Colors.blue[400],
                 child: Text(
@@ -104,7 +104,7 @@ bool loading = false;
                     }
                 },
               ),
-              SizedBox(height: 10.0,),
+              SizedBox(height: 8.0,),
               Text(
                 error,
                 style:TextStyle(

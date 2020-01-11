@@ -49,7 +49,7 @@ class _SignInState extends State<SignIn> {
           key: _formKey,
           child: Column(
             children: <Widget>[
-              SizedBox(height: 20.0,),
+              SizedBox(height: 18.0,),
               TextFormField(
                 decoration: textInputDecoration.copyWith(hintText: 'Email'),
                 validator: (val){
@@ -64,7 +64,7 @@ class _SignInState extends State<SignIn> {
                     setState(()=>email=val);
                 },
               ),
-              SizedBox(height: 20.0,),
+              SizedBox(height: 18.0,),
               TextFormField(
                 decoration: textInputDecoration.copyWith(hintText: 'Password'),
                 validator: (val){
@@ -81,7 +81,7 @@ class _SignInState extends State<SignIn> {
                 },
                 
               ),
-              SizedBox(height: 20.0,),
+              SizedBox(height: 18.0,),
               RaisedButton(
                 color: Colors.blue[400],
                 child: Text(
@@ -108,7 +108,7 @@ class _SignInState extends State<SignIn> {
                     }
                 },
               ),
-              SizedBox(height: 10.0,),
+              SizedBox(height: 8.0,),
               Text(
                 error,
                 style:TextStyle(
